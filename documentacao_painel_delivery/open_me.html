@@ -1,0 +1,190 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Splendiz dashborard - how to setup and use it</title>
+	
+	<meta name="description" content="This tutorial will guide you trough the setup of your splendiz dashboard and show you how to use it">
+	<meta name="author" content="Splendiz">
+	<meta name="copyright" content="Splendiz">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-11-26T00:00:00+01:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-splendiz-dashborard">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#the_splendiz_dashboard" title="The splendiz dashboard">The splendiz dashboard</a></li>
+			<li><a href="#creating_firebase_account" title="creating firebase account">creating firebase account</a></li>
+			<li><a href="#linking_the_app" title="linking the app">linking the app</a></li>
+			<li><a href="#linking_the_dashboard" title="linking the dashboard">linking the dashboard</a></li>
+			<li><a href="#opening_and_using_the_dashboard" title="opening and using the dashboard">opening and using the dashboard</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Splendiz 2015<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Splendiz dashborard</h1>
+	<h2>how to setup and use it</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 03/10/2011</li>
+	<li>latest update: 11/26/2015</li>
+	<li>by: Splendiz</li>
+	
+	<li>email: <a href="mailto:&#115;&#112;&#108;&#101;&#110;&#100;&#105;&#122;&#97;&#112;&#112;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#112;&#108;&#101;&#110;&#100;&#105;&#122;&#97;&#112;&#112;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="the_splendiz_dashboard">
+	<div class="page-header"><h3>The splendiz dashboard</h3><hr class="notop"></div>
+<p>
+	In this tutorial, we will see how to setup and use the splendiz dashboard that comes with the app. With this dashboard, you will be able to see all the current orders with the appropriate information for each order.&nbsp;</p>
+<p>
+	You can see an example of the dashboard <a href="https://dashboardpreview.firebaseapp.com/">here</a>.</p>
+<p>
+	Once again, you do not need any programing skills to setup the dashboard. So let&#39;s get busy !</p>
+</section>
+<section id="creating_firebase_account">
+	<div class="page-header"><h3>creating firebase account</h3><hr class="notop"></div>
+<p>
+	The dashboard is made with a backend library called Firebase. To make the app send data to your own dashboard, you will need to signup to firebase first.</p>
+<p>
+	&nbsp;</p>
+<p>
+	1 - Go to the <a href="https://www.firebase.com/">firebase website</a>&nbsp;and sign up</p>
+<p>
+	2 - You will be redirected to your account. Now click on &quot;create new app&quot; and give it the name and url you want</p>
+<p>
+	3 - copy the url of your new app (the one ending with firenaseIO.com). and put it somewhere you can get to easily, we will need that url to setup the dashboard.</p>
+<p>
+	&nbsp;</p>
+<p>
+	And that&#39;s it for firebase, your server is set up and ready to be used. Now we have to link up the app and the dashboard with the link you got in step 3.</p>
+</section>
+<section id="linking_the_app">
+	<div class="page-header"><h3>linking the app</h3><hr class="notop"></div>
+<p>
+	First, we will link the app to the firebase server. So open the app.js file located in <strong>splendiz_pack/Splendiz/www/js/app.js&nbsp;</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	on line 10 of the app.js file, you have this :<strong>&nbsp;app.constant(&#39;firebaseRef&#39;,&#39;YOUR_FIREBASE_URL&#39;);</strong></p>
+<p>
+	Now simply replace the text YOUR_FIREBASE_URL with the url of the firebase app you just created&#39; And don&#39;t forget to leave the quotes (the &#39;&#39; ).</p>
+<p>
+	as an example : if your url was&nbsp;<strong>myawesomeapp.firebaseIO.com</strong> the line 10 in the file app.js should be :&nbsp;<strong>app.constant(&#39;firebaseRef&#39;,&#39;</strong><strong>myawesomeapp.firebaseIO.com</strong>&nbsp;<strong>&#39;);</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	Now your app is ready to send data to the dashboard.</p>
+</section>
+<section id="linking_the_dashboard">
+	<div class="page-header"><h3>linking the dashboard</h3><hr class="notop"></div>
+<p>
+	Now open the file called <strong>orderService.js&nbsp;</strong>located in <strong>splendiz_pack/dashboard/app/shared.</strong></p>
+<p>
+	In the same way you did for the app, link the url of your firebase app on line 3 :</p>
+<p>
+	orders.constant(&#39;firebaseRef&#39;,&#39;YOUR_FIREBASE_URL_HERE&#39;);</p>
+<p>
+	replace&nbsp;YOUR_FIREBASE_URL_HERE with the actual url of your firebase app (the same used for the app).</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="opening_and_using_the_dashboard">
+	<div class="page-header"><h3>opening and using the dashboard</h3><hr class="notop"></div>
+<p>
+	If you want to upload your dashboard on the internet, you could do it very easily. But we are only going to show you how to open the dashboard on your computer without puting anything on the internet.&nbsp;</p>
+<p>
+	To open the dashboard, you are going to need a local server on your computer. There are plenty of servers you can use but we are going to use a google chrome plugin that does the job very well.</p>
+<p>
+	1 - If you do not have google chrome, install it <a href="https://www.google.fr/chrome/browser/desktop/">here</a></p>
+<p>
+	2 - now open google chrome and go to the chrome web store to download <a href="https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=fr">this app</a>, called web server for chrome.</p>
+<p>
+	3 - install the app</p>
+<p>
+	4 - In the url bar, type &#39;chrome://apps&#39; and launch the app&nbsp;<strong>server server.</strong></p>
+<p>
+	5 - now on the web server app, click on &#39;choose folder&#39; and navigate to the&nbsp;<strong>dashboard&nbsp;</strong>folder located in <strong>splendiz_pack</strong></p>
+<p>
+	6 - now tick the option called &quot;Automatically show index.html&quot;</p>
+<p>
+	7 - To open the dashboard, click on the url under&nbsp;<strong>web servers url&nbsp;</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	and Voila ! Your dashboard is ready ! the next time you will be opening the dashboard, you won&#39;t have to repeat all the steps. All you have to do now when you want to use the dashboard is opening google chrome, typing &quot;chrome://apps&quot; in the url bar, opening the web server and opening the link from there.</p>
+</section>
+
+	</div>
+</body>
+</html>
